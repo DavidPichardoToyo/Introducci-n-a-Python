@@ -1,13 +1,18 @@
 import math
 import math as m
 
-print('Programa para calcular las utilidades de un proyecto')
+print('Programa para calcular las utilidades de un proyecto con usuarios premium')
+print('No se permiten valores negativos')
+
 
 P = float(input("Ingrese precio de suscripción:"))
-U = int(input("Ingrese el número de usuarios normales:"))
+UN = int(input("Ingrese el número de usuarios normales:"))
 UP = int(input("Ingrese el número de usuarios premium:"))
 GT = float(input("Ingrese los gastos:"))
 
-Utilidades = P * (U + UP*1.5) - GT
+ingresos_normales = P * UN
+ingresos_premium = (P * 1.5) * UP
 
-print(f'Las utilidades calculadas son:{Utilidades}')
+Utilidades = ingresos_normales + ingresos_premium - GT
+
+print(f'Las utilidades calculadas son:{Utilidades:.2f}')
