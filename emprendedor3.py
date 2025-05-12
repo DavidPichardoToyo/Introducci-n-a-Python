@@ -2,7 +2,7 @@ import math
 import math as m
 
 print('Programa para calcular las utilidades de un proyecto y comparación de utilidades')
-print("Error: No se permiten valores negativos")
+print("Error: No se permiten valores negativos para un buen funcionamiento de la calculadora")
 
 P = float(input("Ingrese precio de suscripción:"))
 U = int(input("Ingrese el número de usuarios:"))
